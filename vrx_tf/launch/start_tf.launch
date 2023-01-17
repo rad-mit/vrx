@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Axes -->
+    <param name="scale_linear" value="2" type="double"/>
+    <param name="scale_angular" value="2" type="double"/>
+
+    <node pkg="vrx_tf" type="tf_broadcaster"
+          args="/turtle1" name="tf_broadcaster1" />
+    <node pkg="vrx_tf" type="tf_broadcaster"
+          args="/turtle2" name="tf_broadcaster2" />
+
+  </launch>

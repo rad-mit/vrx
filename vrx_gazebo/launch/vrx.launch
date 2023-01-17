@@ -45,6 +45,10 @@
     <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
   </include>
 
+<!-- 
+  <include file="$(find vrx_tf)/launch/start_tf.launch"></include>
+-->
+
   <!-- Load robot model -->
   <!-- Determine which model -->
   <arg name="h_config" value="$(eval int((thrust_config)=='H'))"/>
@@ -70,7 +74,7 @@
   <arg name="model" default="$(find wamv_gazebo)/urdf/wamv_gazebo.urdf.xacro"/>
 
 <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
-<param name="use_gui" value="$(arg gui)"/>
+<param name="joint_state_publisher_gui" value="$(arg gui)"/>
 
 <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
