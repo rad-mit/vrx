@@ -1,4 +1,4 @@
-# Autonomous Navigation of a USVs
+# Autonomous Navigation of a USV
 
 # Virtual RobotX (VRX)
 This repository is the home to the source code and software documentation for the VRX simulation environment, which supports simulation of unmanned surface vehicles in marine environments.
