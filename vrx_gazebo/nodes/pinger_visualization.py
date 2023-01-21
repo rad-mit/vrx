@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 # Copyright 2018 Jonathan Wheare (jonathan.wheare@flinders.edu.au)
 #

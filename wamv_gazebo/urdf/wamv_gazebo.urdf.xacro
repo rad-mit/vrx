@@ -112,7 +112,7 @@
   <xacro:unless value="$(arg yaml_component_generation)">
     <!-- Add a front camera -->
     <xacro:if value="$(arg camera_enabled)">
-      <xacro:wamv_camera name="front_camera" y="0.3" x="0.75" P="${radians(15)}" />
+      <xacro:wamv_camera name="front_camera" y="0.3" x="0.75" P="${radians(15)}" visualize="True"/>
     </xacro:if>
     
     <!-- Add simulated GPS -->
